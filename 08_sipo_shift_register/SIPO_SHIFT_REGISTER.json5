@@ -1,0 +1,20 @@
+{
+  signal: [
+    { name: 'CLK',        wave: 'p.........' },
+    { name: 'RST_N',      wave: '1.........' },
+    { name: 'I_SHIFT_EN', wave: '==========', data: ['1', '1', '1', '1', '1', '1', '1', '1', '0', '0'] },
+    { name: 'I_SERIAL',   wave: '==========', data: ['1', '0', '1', '0', '1', '0', '1', '1', 'x', 'x'] },
+    {},
+    { name: 'O_PARALLEL', wave: 'xxxxxxxx8=', data: ['11010101', '11010101'] },
+    { name: 'O_DONE',     wave: '0000000011' }
+  ],
+  head: {
+    text: 'SIPO_SHIFT_REGISTER: receive 10101011, then assert O_DONE'
+  },
+  foot: {
+    text: 'Each rising edge with I_SHIFT_EN=1 shifts one serial bit into the register.'
+  },
+  config: {
+    hscale: 2
+  }
+}
