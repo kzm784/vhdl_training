@@ -1,0 +1,21 @@
+{
+  signal: [
+    { name: 'CLK',       wave: 'p........' },
+    { name: 'RST_N',     wave: '1........' },
+    { name: 'I_ENABLE',  wave: '010111111' },
+    {},
+    { name: 'STATE',     wave: '=.=.=.=.=', data: ['GREEN', 'YELLOW', 'RED', 'GREEN', 'YELLOW'] },
+    { name: 'O_GREEN',   wave: '1.0.0.1.0' },
+    { name: 'O_YELLOW',  wave: '0.1.0.0.1' },
+    { name: 'O_RED',     wave: '0.0.1.0.0' }
+  ],
+  head: {
+    text: 'TRAFFIC_LIGHT_CONTROLLER: GREEN -> YELLOW -> RED'
+  },
+  foot: {
+    text: 'The state changes only on a rising edge when I_ENABLE is 1.'
+  },
+  config: {
+    hscale: 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  signal: [
+    { name: 'CLK',      wave: 'p.........' },
+    { name: 'RST_N',    wave: '1.........' },
+    { name: 'I_SIGNAL', wave: '0011100110' },
+    {},
+    { name: 'O_PULSE',  wave: '0010000100' }
+  ],
+  head: {
+    text: 'RISING_EDGE_DETECTOR: one-cycle pulse for each 0-to-1 transition'
+  },
+  foot: {
+    text: 'Compare the current input with the previous value stored in a flip-flop.'
+  },
+  config: {
+    hscale: 2
+  }
+}

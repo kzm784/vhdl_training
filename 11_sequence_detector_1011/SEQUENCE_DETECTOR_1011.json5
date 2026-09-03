@@ -1,0 +1,19 @@
+{
+  signal: [
+    { name: 'CLK',      wave: 'p.......' },
+    { name: 'RST_N',    wave: '1.......' },
+    { name: 'I_ENABLE', wave: '1111111.' },
+    { name: 'I_DATA',   wave: '0101101.', data: ['1', '0', '1', '1', '0', '1', '1'] },
+    {},
+    { name: 'O_DETECT', wave: '0001001.' }
+  ],
+  head: {
+    text: 'SEQUENCE_DETECTOR_1011: overlapping detection'
+  },
+  foot: {
+    text: 'The pattern 1011 is detected twice in the input 1011011.'
+  },
+  config: {
+    hscale: 2
+  }
+}

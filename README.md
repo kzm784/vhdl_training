@@ -23,6 +23,14 @@
 5. [05_clk_divider/README.md](05_clk_divider/README.md) - クロック分周
 6. [06_piso_shift_register/README.md](06_piso_shift_register/README.md) - PISO シフトレジスタ
 7. [07_up_down_counter_8bit/README.md](07_up_down_counter_8bit/README.md) - 同期アップダウンカウンタ
+8. [08_sipo_shift_register/README.md](08_sipo_shift_register/README.md) - SIPOシフトレジスタ
+9. [09_piso_shift_register/README.md](09_piso_shift_register/README.md) - 立ち上がりエッジ検出
+10. [10_traffic_light_controller/README.md](10_traffic_light_controller/README.md) - 信号機コントローラ（FSM）
+11. [11_sequence_detector_1011/README.md](11_sequence_detector_1011/README.md) - 1011シーケンス検出器（FSM）
+
+## レクチャー
+
+- [FSM_DESIGN_GUIDE.md](FSM_DESIGN_GUIDE.md) - 状態遷移回路を設計する定石
 
 ## 命名規則
 
